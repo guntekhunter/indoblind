@@ -16,6 +16,7 @@
   width: 75%;
   display: flex;
   object-fit: cover;
+  height: 100%;
 }
 /* card in front of hero section */
 .overlap-card-container {
@@ -27,10 +28,13 @@
   width: 100%;
   height: 100%;
 }
-.overlap-container {
-  background: white;
-  width: 80%;
+.overlap-card-container .container {
   display: flex;
+  height: 16rem;
+}
+
+.overlap-card-container .overlap-container {
+  width: 80%;
   height: 17rem;
 }
 
@@ -66,4 +70,120 @@
   width: 100%;
   margin-top: 2rem;
   margin-right: 3rem;
+}
+
+/* section two in overlay card */
+.more-info {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  padding: 4rem;
+}
+.more-info img {
+  width: 1rem;
+  margin-right: 1rem;
+}
+
+.more-info .info {
+  background: white;
+  display: flex;
+}
+
+.more-info .left {
+  border-right: 2px dashed #e6e6e6;
+}
+.more-info .right {
+  border-left: 2px dashed #e6e6e6;
+  padding: 0rem 4rem;
+}
+
+.more-info .info p {
+  font-size: 0.8rem;
+}
+
+.more-info .title {
+  color: #334553;
+}
+.more-info .date {
+  margin-top: .3rem;
+  color: #93999d;
+}
+
+/* about */
+.about{
+  background: white;
+  padding: 0rem 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+.about .title-container-profile{
+  padding: 2rem 0rem;
+  width: 100%;
+  border-top: 2px dashed #e6e6e6;
+}
+
+.about .title-container-profile .description{
+  font-size: .8rem;
+  margin-top: .7rem;
+}
+
+.about .title-container-profile a{
+  margin-top: 1rem;
+  font-size: .8rem;
+  text-decoration: none;
+  color: #518FEC;
+}
+
+/* profile */
+.profile{
+  background: white;
+  padding: 0rem 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+.profile .title-container-profile{
+  padding: 2rem 0rem;
+  width: 100%;
+  border-top: 2px dashed #e6e6e6;
+}
+
+.profile .title-container-profile .description{
+  font-size: .8rem;
+  margin-top: .7rem;
+}
+
+.profile .title-container-profile a{
+  margin-top: 1rem;
+  font-size: .8rem;
+  text-decoration: none;
+  color: #518FEC;
+}
+.profile .rounded-container{
+  display: flex;
+}
+
+.profile .rounded-container img{
+  margin-top: 1rem;
+  margin-right: 4rem;
+  width: 8rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background: #EFEFEF;
+}
+.profile .button{
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  border-radius: 2rem;
+  background: #ff843e;
+  width: 15%;
+  font-size: .8rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
+}
+
+/* related event */
+.about .card-hero-container{
+  border: 1px solid #E6E6E6;
+  border-radius: 0.3rem;
 }
